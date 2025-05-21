@@ -1,5 +1,6 @@
 package net.crus.iskrismod;
 
+import net.crus.iskrismod.block.ModBlocks;
 import net.crus.iskrismod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +38,7 @@ public class IskrisMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,6 +57,10 @@ public class IskrisMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.KARL_MARX_BOOK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ISKRIS_ORE);
         }
     }
 
