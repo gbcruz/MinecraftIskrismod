@@ -1,6 +1,7 @@
 package net.crus.iskrismod;
 
 import net.crus.iskrismod.block.ModBlocks;
+import net.crus.iskrismod.item.ModCreativeModeTabs;
 import net.crus.iskrismod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +38,8 @@ public class IskrisMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -61,6 +64,18 @@ public class IskrisMod
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ISKRIS_ORE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.ISKRIS_INGOT);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.RAW_ISKRIS);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.FILHO_DO_GUIVEN);
         }
     }
 

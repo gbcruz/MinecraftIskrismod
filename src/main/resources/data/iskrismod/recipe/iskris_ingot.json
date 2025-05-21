@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "iskrismod:raw_iskris"
+  },
+  "result": {
+    "id": "iskrismod:iskris_ingot"
+  },
+  "experience": 0.15,
+  "cookingtime": 100
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key" : {
+    "A" : {
+      "item": "iskrismod:iskris_ingot"
+    },
+    "B": {
+      "item": "iskrismod:karl_marx"
+    }
+  },
+  "pattern": [
+    " A ",
+    " A ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "iskrismod:filho_do_guiven"
+  }
+}

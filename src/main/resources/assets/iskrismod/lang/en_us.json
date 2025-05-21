@@ -1,4 +1,6 @@
 {
   "item.iskrismod.karl_marx": "Karl Marx",
-  "block.iskrismod.iskris_ore": "Iskris Ore"
+  "item.iskrismod.iskris_ingot": "Iskris Ingot",
+  "block.iskrismod.iskris_ore": "Iskris Ore",
+  "item.iskrismod.raw_iskris": "Raw Iskris"
 }
