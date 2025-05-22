@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "iskrismod:block/iskris_22_ore"
+  }
+}

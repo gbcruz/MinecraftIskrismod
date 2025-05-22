@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_ISKRIS.get());
                         output.accept(ModItems.FILHO_DO_GUIVEN.get());
                         output.accept(ModBlocks.ISKRIS_ORE.get());
+                        output.accept(ModItems.KIWI.get());
+                        output.accept(ModBlocks.ISKRIS_22_ORE.get());
                     })
                     .build());
 

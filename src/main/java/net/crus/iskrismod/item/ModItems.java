@@ -1,5 +1,6 @@
 package net.crus.iskrismod.item;
 import net.crus.iskrismod.IskrisMod;
+import net.crus.iskrismod.item.custom.ChiselItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.Item;
@@ -17,6 +18,8 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ISKRIS = ITEMS.register("raw_iskris", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FILHO_DO_GUIVEN = ITEMS.register("filho_do_guiven", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> KIWI = ITEMS.register("kiwi", () -> new ChiselItem(new Item.Properties().durability(50)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

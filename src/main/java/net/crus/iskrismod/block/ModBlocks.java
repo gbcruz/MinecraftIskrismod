@@ -21,6 +21,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ISKRIS_ORE = registerBlock("iskris_ore", () -> new Block(BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
 
+    public static final RegistryObject<Block> ISKRIS_22_ORE = registerBlock("iskris_22_ore", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS .register(name, block);
         registerBlockItem(name, toReturn);
